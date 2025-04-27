@@ -2,6 +2,8 @@ import React from 'react'
 
 const Card = ({src, title}) => {
   return (
+    <Link to={`/${title.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}
+    className="no-underline">
     <div className="relative w-64 h-80 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transition-all">
       {/* Background Image */}
       <img
@@ -18,6 +20,7 @@ const Card = ({src, title}) => {
         {title}
       </div>
     </div>
+    </Link>
   )
 }
 
