@@ -8,16 +8,16 @@ import CreateBlog from '../components/CreateBlog';
 const Home = () => {
   return (
     <div className="w-full overflow-hidden">
-      <FrontPage />
+       <FrontPage />
       <div className="my-6 sm:my-12">
         <EmailForm />
       </div>
       <div className="my-6 sm:my-12">
         <Categories />
       </div>
-      <div className="my-6 sm:my-12">
+      {/* <div className="my-6 sm:my-12">
         <RoomPodcasts />
-      </div>
+      </div> */}
     </div>
   );
 };
