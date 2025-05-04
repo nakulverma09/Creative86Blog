@@ -22,8 +22,9 @@ const FrontPage = () => {
             </span>
           </div>
           <p className="text-gray-600 text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            provident vero repudiandae, nulla dolorum deleniti est eos sapiente.
+            Unleashing bold ideas through design and innovation — Creative 86
+            turns imagination into stunning digital experiences that captivate,
+            inspire, and leave a lasting impact.
           </p>
           <div className="flex justify-center md:justify-start w-full">
             <Link to="/create-blog" className="w-full md:w-1/2">

@@ -209,7 +209,7 @@ const Navbar = () => {
               </>
             )}
           </div>
-        </motion.div>
+        </motion.div> 
       </>
     )}
   </nav> // 
