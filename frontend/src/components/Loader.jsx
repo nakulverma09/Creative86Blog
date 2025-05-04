@@ -2,19 +2,10 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900">
-      <div className="relative animate-bounce">
-        {/* Body */}
-        <div className="w-16 h-20 bg-red-600 rounded-t-full rounded-b-md relative">
-          {/* Visor */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 -top-3 w-10 h-6 bg-blue-300 rounded-full border-2 border-blue-500"></div>
-
-          {/* Backpack */}
-          <div className="absolute -left-4 top-4 w-4 h-10 bg-red-700 rounded-lg"></div>
-        </div>
-
-        {/* Shadow */}
-        <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-14 h-2 bg-black opacity-30 rounded-full blur-sm animate-pulse"></div>
+    <div className="flex items-center justify-center h-screen w-screen bg-gray-900">
+      <div className="w-3/5 h-4 relative overflow-hidden bg-gray-800 rounded-full shadow-lg">
+        {/* Animated bar */}
+        <div className="absolute top-0 left-0 h-full w-1/3 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-loading-bar rounded-full" />
       </div>
     </div>
   );
