@@ -86,10 +86,7 @@ const Navbar = () => {
     "Miscellaneous",
   ];
 
-  return (<motion.nav 
-    initial={{ y: -50, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.6, delay: 0.2 }}
+  return (<nav 
     className="h-20 w-full flex gap-1 items-center justify-between px-2 md:px-3 lg:px-3 xl:px-3 border-b border-t border-red-600 bg-white relative"
   >
     {/* 🟢 Mobile Menu Button */}
@@ -143,17 +140,17 @@ const Navbar = () => {
     {isMenuOpen && (
       <>
         {/* 🔹 Backdrop */}
-        <motion.div
+        <div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           className="fixed inset-0 bg-black bg-opacity-40 z-40"
           onClick={() => setIsMenuOpen(false)}
-        ></motion.div>
+        ></div>
   
         {/* 🔹 Menu Container */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
@@ -212,10 +209,10 @@ const Navbar = () => {
               </>
             )}
           </div>
-        </motion.div>
+        </div>
       </>
     )}
-  </motion.nav> // 
+  </nav> // 
   );
 };
 
