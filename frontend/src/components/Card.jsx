@@ -7,12 +7,12 @@ const Card = ({ src, title }) => {
       to={`/${title.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}
       className="no-underline"
     >
-      <div className="relative w-64 h-80 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transition-all">
+      <div className="relative w-64 h-80 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transition-all group">
         {/* Background Image */}
         <img
           src={src}
           alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
 
         {/* Dark Overlay */}
