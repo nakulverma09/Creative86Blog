@@ -140,17 +140,17 @@ const Navbar = () => {
     {isMenuOpen && (
       <>
         {/* 🔹 Backdrop */}
-        <div
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           className="fixed inset-0 bg-black bg-opacity-40 z-40"
           onClick={() => setIsMenuOpen(false)}
-        ></div>
+        ></motion.div>
   
         {/* 🔹 Menu Container */}
-        <div
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
@@ -209,7 +209,7 @@ const Navbar = () => {
               </>
             )}
           </div>
-        </div>
+        </motion.div>
       </>
     )}
   </nav> // 
