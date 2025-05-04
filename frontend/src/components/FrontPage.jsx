@@ -33,11 +33,11 @@ const FrontPage = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 relative z-10 group">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 relative z-10">
           <img
             src={groupImg}
             alt="Front Page"
-            className="h-[300px] md:h-[500px] w-[300px] md:w-[500px] object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-105"
+            className="h-[300px] md:h-[500px] w-[300px] md:w-[500px] object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out hover:scale-105"
           />
         </div>
       </div>
