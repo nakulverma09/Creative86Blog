@@ -12,7 +12,7 @@ const Card = ({ src, title }) => {
         <img
           src={src}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-140 transition-transform duration-300"
+          className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
         />
 
         {/* Dark Overlay */}
