@@ -3,11 +3,9 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const session = require("express-session");
 const connectDB = require("./config/db");
-const mongoose = require("mongoose");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const cookieParser = require("cookie-parser");
-const jwt = require("jsonwebtoken");
 const authRoutes = require("./routes/authRoutes.js")
 const subsRoutes = require("./routes/subsRoutes.js")
 const blogRoutes = require("./routes/blogRoutes.js")
@@ -15,11 +13,6 @@ const tokenRoutes = require("./routes/tokenRoutes.js")
 const categoryRoutes = require("./routes/categoryRoutes.js")
 const userRoutes = require("./routes/userRoutes.js")
 const User = require("./models/user.js"); // Assuming you have a User model defined
-const Email = require("./models/email.js"); // Assuming you have an Email model defined
-const Blog = require("./models/Blog.js")
-const Contact = require("./models/contact.js"); // Assuming you have a Contact model defined
-const authenticateToken = require("./middlewares/authMiddleware"); // Assuming you have a JWT authentication middleware
-const { refreshToken } = require("./controllers/tokenControllers.js");
 
 dotenv.config();
 connectDB();
